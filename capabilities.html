@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возможности системы - ClinicEquipFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <a href="index.html" class="header__logo">
+            <img src="assets/img/logo.svg" alt="Clinic Automate" class="header__logo-img">
+            <span class="header__logo-text">ClinicEquip<span>Flow</span></span>
+        </a>
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav-link">Главная</a>
+            <a href="#modules" class="header__nav-link">Модули системы</a>
+            <a href="#reports" class="header__nav-link">Аналитика</a>
+            <a href="#integration" class="header__nav-link">Интеграция</a>
+            <a href="index.html#cta" class="header__nav-link header__nav-link--accent">Демо-доступ</a>
+        </nav>
+        <button class="header__burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge">Детальный обзор функционала</div>
+                <h1 class="hero__title">
+                    Полный спектр возможностей для управления медицинским оборудованием
+                </h1>
+                <p class="hero__subtitle">
+                    Система ClinicEquipFlow состоит из взаимосвязанных модулей, которые охватывают весь жизненный цикл оборудования — от потребности до списания.
+                </p>
+                <div class="hero__actions">
+                    <a href="index.html#cta" class="btn btn--primary">
+                        Запросить демо-доступ
+                    </a>
+                    <a href="implementation.html" class="btn btn--ghost">
+                        Процесс внедрения →
+                    </a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero-ui">
+                    <div class="hero-ui__header">
+                        <div class="hero-ui__title">Панель управления</div>
+                        <div class="hero-ui__filters">
+                            <button class="hero-chip hero-chip--active">Сводка</button>
+                            <button class="hero-chip">Оборудование</button>
+                            <button class="hero-chip">Финансы</button>
+                        </div>
+                    </div>
+                    <div class="hero-ui__table">
+                        <div class="hero-ui__row hero-ui__row--head">
+                            <span>Показатель</span>
+                            <span>Текущий</span>
+                            <span>Изменение</span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span>Активное оборудование</span>
+                            <span>148</span>
+                            <span><span class="status status--success">+12%</span></span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span>Заявок в работе</span>
+                            <span>23</span>
+                            <span><span class="status status--warning">−5%</span></span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span>Бюджет исполнен</span>
+                            <span>78%</span>
+                            <span><span class="status status--success">+8%</span></span>
+                        </div>
+                    </div>
+                    <div class="hero-ui__timeline">
+                        <div class="hero-ui__timeline-title">Использование модулей</div>
+                        <div class="timeline">
+                            <div class="timeline__step timeline__step--done">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Учёт</span>
+                            </div>
+                            <div class="timeline__step timeline__step--active">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Заявки</span>
+                            </div>
+                            <div class="timeline__step timeline__step--done">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Закупки</span>
+                            </div>
+                            <div class="timeline__step">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Аналитика</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules -->
+    <section class="section section--alt" id="modules">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Основные модули системы</h2>
+                <p class="section__subtitle">
+                    Каждый модуль решает конкретные задачи и может использоваться как отдельно, так и в комплексе с другими компонентами.
+                </p>
+            </div>
+
+            <div class="benefits__grid">
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Модуль управления заявками</h3>
+                    <ul class="benefit-card__list">
+                        <li>Создание заявок с прикреплением спецификаций</li>
+                        <li>Маршрутизация согласования по ролям</li>
+                        <li>Уведомления об изменении статусов</li>
+                        <li>История изменений и комментарии</li>
+                        <li>Шаблоны для повторяющихся заявок</li>
+                    </ul>
+                    <div class="stat-card" style="margin-top: 12px;">
+                        <div class="stat-card__value">−50%</div>
+                        <div class="stat-card__label">времени на согласование</div>
+                    </div>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Реестр оборудования</h3>
+                    <ul class="benefit-card__list">
+                        <li>Карточки оборудования с полными тех. характеристиками</li>
+                        <li>Привязка к помещениям и ответственным</li>
+                        <li>QR-коды для быстрой идентификации</li>
+                        <li>История перемещений и обслуживания</li>
+                        <li>Группировка по категориям и отделениям</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Планирование закупок</h3>
+                    <ul class="benefit-card__list">
+                        <li>Формирование планов закупок на год/квартал</li>
+                        <li>Сравнительный анализ поставщиков</li>
+                        <li>Контроль лимитов бюджета</li>
+                        <li>Интеграция с электронными площадками</li>
+                        <li>Автоматизация тендерной документации</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Техническое обслуживание</h3>
+                    <ul class="benefit-card__list">
+                        <li>Плановое ТО по регламентам</li>
+                        <li>Учёт ремонтов и запчастей</li>
+                        <li>Контроль гарантийных сроков</li>
+                        <li>Заявки на ремонт от отделений</li>
+                        <li>Аналитика отказов оборудования</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Управление договорами</h3>
+                    <ul class="benefit-card__list">
+                        <li>Хранение договоров и доп. соглашений</li>
+                        <li>Напоминания о сроках оплаты</li>
+                        <li>Контроль исполнения обязательств</li>
+                        <li>Шаблоны договоров</li>
+                        <li>Архив завершённых договоров</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Складской учёт</h3>
+                    <ul class="benefit-card__list">
+                        <li>Учёт ЗИП и расходных материалов</li>
+                        <li>Инвентаризация и списание</li>
+                        <li>Нормирование запасов</li>
+                        <li>Заявки на выдачу со склада</li>
+                        <li>Отслеживание остатков</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports -->
+    <section class="section" id="reports">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Аналитика и отчётность</h2>
+                <p class="section__subtitle">
+                    Система предоставляет более 50 видов отчётов и дашбордов для анализа эффективности использования оборудования.
+                </p>
+            </div>
+
+            <div class="trust__grid">
+                <div class="trust-card">
+                    <h3 class="trust-card__title">Финансовая аналитика</h3>
+                    <ul class="trust-card__list">
+                        <li>Расходы на закупку по периодам и отделениям</li>
+                        <li>Сравнение плановых и фактических затрат</li>
+                        <li>Амортизация оборудования</li>
+                        <li>Стоимость владения (TCO) по группам оборудования</li>
+                        <li>Эффективность инвестиций (ROI)</li>
+                    </ul>
+                    <img src="assets/img/reports-1.png" alt="Финансовая аналитика" class="trust-card__image">
+                </div>
+                <div class="trust-card">
+                    <h3 class="trust-card__title">Операционные отчёты</h3>
+                    <ul class="trust-card__list">
+                        <li>Загрузка оборудования по часам/дням</li>
+                        <li>Простои и причины отказов</li>
+                        <li>Эффективность ремонтов</li>
+                        <li>Выполнение планов ТО</li>
+                        <li>Статистика заявок по типам и срокам</li>
+                    </ul>
+                    <img src="assets/img/reports-2.png" alt="Операционные отчёты" class="trust-card__image">
+                </div>
+                <div class="trust-card trust-card--highlight">
+                    <h3 class="trust-card__title">Дашборды для руководства</h3>
+                    <p class="trust-card__text">
+                        Персонализированные панели управления с ключевыми показателями (KPI) для каждого уровня управления:
+                        от заведующего отделением до главного врача и финансового директора.
+                    </p>
+                    <div class="trust-card__stats">
+                        <div class="trust-mini">
+                            <div class="trust-mini__value mono">15+</div>
+                            <div class="trust-mini__label">готовых дашбордов</div>
+                        </div>
+                        <div class="trust-mini">
+                            <div class="trust-mini__value mono">24/7</div>
+                            <div class="trust-mini__label">доступ к отчётам</div>
+                        </div>
+                        <div class="trust-mini">
+                            <div class="trust-mini__value mono">PDF/Excel</div>
+                            <div class="trust-mini__label">экспорт в форматы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration -->
+    <section class="section section--alt" id="integration">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Интеграционные возможности</h2>
+                <p class="section__subtitle">
+                    Система может работать как автономно, так и в составе единой информационной среды клиники.
+                </p>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__col">
+                    <h3 class="section__subtitle-title">С чем интегрируемся</h3>
+                    <ul class="feature-list">
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Бухгалтерские системы</div>
+                                <div class="feature__text">
+                                    1С, SAP, Oracle Financials и другие
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Мед. информационные системы</div>
+                                <div class="feature__text">
+                                    МИС, электронные медкарты, расписания
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Электронные площадки</div>
+                                <div class="feature__text">
+                                    Госзакупки, коммерческие торговые площадки
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Системы мониторинга</div>
+                                <div class="feature__text">
+                                    IoT-датчики на оборудовании, системы телеметрии
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__col">
+                    <h3 class="section__subtitle-title">Технологии интеграции</h3>
+                    <div class="process">
+                        <div class="process__item">
+                            <div class="process__step mono">API</div>
+                            <div class="process__body">
+                                <div class="process__title">REST API</div>
+                                <div class="process__text">
+                                    Современный JSON API для двусторонней интеграции
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">XML</div>
+                            <div class="process__body">
+                                <div class="process__title">XML-обмен</div>
+                                <div class="process__text">
+                                    Поддержка стандартных форматов для обмена данными
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">CSV</div>
+                            <div class="process__body">
+                                <div class="process__title">Файловый обмен</div>
+                                <div class="process__text">
+                                    Импорт/экспорт CSV, Excel для постепенной миграции
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">SAML</div>
+                            <div class="process__body">
+                                <div class="process__title">Единый вход</div>
+                                <div class="process__text">
+                                    Интеграция с корпоративными системами аутентификации
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card" style="margin-top: 20px;">
+                        <div class="stat-card__value">4-8 недель</div>
+                        <div class="stat-card__label">типовой срок интеграции</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container section__inner cta__inner">
+            <div class="cta__content">
+                <h2 class="section__title">Получите подробную спецификацию</h2>
+                <p class="section__subtitle">
+                    Отправьте запрос, и мы вышлем полное техническое описание системы, примеры отчётов и инструкцию по работе с демо-версией.
+                </p>
+            </div>
+            <form class="cta__form">
+                <div class="form__row">
+                    <label class="form__field">
+                        <span class="form__label">Имя</span>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="form__field">
+                        <span class="form__label">E-mail</span>
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                </div>
+                <label class="form__field">
+                    <span class="form__label">Интересующие модули</span>
+                    <textarea name="modules" rows="3" placeholder="Например: управление заявками, техническое обслуживание, аналитика..."></textarea>
+                </label>
+                <button type="submit" class="btn btn--primary btn--full">
+                    Получить спецификацию
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <span class="footer__text">ClinicEquipFlow · Возможности системы</span>
+        <span class="footer__text">
+            <a href="index.html" style="color: var(--accent-primary);">Главная</a> · 
+            <a href="implementation.html" style="color: var(--accent-primary);">Внедрение</a> · 
+            <a href="index.html#cta" style="color: var(--accent-primary);">Контакты</a>
+        </span>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

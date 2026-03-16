@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Внедрение и поддержка - ClinicEquipFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <a href="index.html" class="header__logo">
+            <img src="assets/img/logo.svg" alt="Clinic Automate" class="header__logo-img">
+            <span class="header__logo-text">ClinicEquip<span>Flow</span></span>
+        </a>
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav-link">Главная</a>
+            <a href="capabilities.html" class="header__nav-link">Возможности</a>
+            <a href="#process" class="header__nav-link">Процесс внедрения</a>
+            <a href="#support" class="header__nav-link">Поддержка</a>
+            <a href="index.html#cta" class="header__nav-link header__nav-link--accent">Обсудить проект</a>
+        </nav>
+        <button class="header__burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge">Поэтапное внедрение</div>
+                <h1 class="hero__title">
+                    Внедрение системы с минимальными рисками и гарантированным результатом
+                </h1>
+                <p class="hero__subtitle">
+                    Мы сопровождаем клиентов на всех этапах — от анализа процессов до полномасштабной эксплуатации и развития системы.
+                </p>
+                <div class="hero__actions">
+                    <a href="index.html#cta" class="btn btn--primary">
+                        Запросить план внедрения
+                    </a>
+                    <a href="capabilities.html" class="btn btn--ghost">
+                        ← Функционал системы
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat-card">
+                        <div class="stat-card__value">98%</div>
+                        <div class="stat-card__label">проектов в срок</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__value">24/7</div>
+                        <div class="stat-card__label">техподдержка</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__value">30 дн.</div>
+                        <div class="stat-card__label">тестовый период</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero-ui">
+                    <div class="hero-ui__header">
+                        <div class="hero-ui__title">Проект внедрения</div>
+                        <div class="hero-ui__filters">
+                            <button class="hero-chip hero-chip--active">Этапы</button>
+                            <button class="hero-chip">Сроки</button>
+                            <button class="hero-chip">Ответственные</button>
+                        </div>
+                    </div>
+                    <div class="hero-ui__table">
+                        <div class="hero-ui__row hero-ui__row--head">
+                            <span>Этап</span>
+                            <span>Статус</span>
+                            <span>Прогресс</span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span>Анализ</span>
+                            <span><span class="status status--success">Завершён</span></span>
+                            <span>100%</span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span>Настройка</span>
+                            <span><span class="status status--warning">В работе</span></span>
+                            <span>75%</span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span>Обучение</span>
+                            <span><span class="status status--danger">Ожидание</span></span>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                    <div class="hero-ui__timeline">
+                        <div class="hero-ui__timeline-title">График проекта</div>
+                        <div class="timeline">
+                            <div class="timeline__step timeline__step--done">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Неделя 1-2</span>
+                            </div>
+                            <div class="timeline__step timeline__step--active">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Неделя 3-6</span>
+                            </div>
+                            <div class="timeline__step">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Неделя 7-8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section--alt" id="process">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Процесс внедрения: 6 ключевых этапов</h2>
+                <p class="section__subtitle">
+                    Каждый этап имеет чёткие цели, результаты и контрольные точки для согласования с заказчиком.
+                </p>
+            </div>
+
+            <div class="process" style="gap: 16px;">
+                <div class="process__item">
+                    <div class="process__step mono">01</div>
+                    <div class="process__body">
+                        <div class="process__title">Диагностика и планирование (1-2 недели)</div>
+                        <div class="process__text">
+                            <ul style="margin: 8px 0; padding-left: 20px; color: var(--text-secondary);">
+                                <li>Сбор требований и анализ текущих процессов</li>
+                                <li>Интервью с ключевыми пользователями</li>
+                                <li>Формирование технического задания</li>
+                                <li>Подготовка детального плана проекта</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process__item">
+                    <div class="process__step mono">02</div>
+                    <div class="process__body">
+                        <div class="process__title">Настройка системы (2-4 недели)</div>
+                        <div class="process__text">
+                            <ul style="margin: 8px 0; padding-left: 20px; color: var(--text-secondary);">
+                                <li>Развёртывание тестового окружения</li>
+                                <li>Настройка модулей под процессы клиники</li>
+                                <li>Создание справочников и классификаторов</li>
+                                <li>Интеграция с существующими системами</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process__item">
+                    <div class="process__step mono">03</div>
+                    <div class="process__body">
+                        <div class="process__title">Загрузка начальных данных (1 неделя)</div>
+                        <div class="process__text">
+                            <ul style="margin: 8px 0; padding-left: 20px; color: var(--text-secondary);">
+                                <li>Миграция данных из Excel/других систем</li>
+                                <li>Формирование реестра оборудования</li>
+                                <li>Настройка прав доступа пользователей</li>
+                                <li>Проверка корректности данных</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process__item">
+                    <div class="process__step mono">04</div>
+                    <div class="process__body">
+                        <div class="process__title">Обучение пользователей (1-2 недели)</div>
+                        <div class="process__text">
+                            <ul style="margin: 8px 0; padding-left: 20px; color: var(--text-secondary);">
+                                <li>Обучение администраторов системы</li>
+                                <li>Тренинги для конечных пользователей по ролям</li>
+                                <li>Разработка инструкций и методичек</li>
+                                <li>Проведение пилотных прогонов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process__item">
+                    <div class="process__step mono">05</div>
+                    <div class="process__body">
+                        <div class="process__title">Пилотная эксплуатация (2-4 недели)</div>
+                        <div class="process__text">
+                            <ul style="margin: 8px 0; padding-left: 20px; color: var(--text-secondary);">
+                                <li>Работа в системе ограниченной группой пользователей</li>
+                                <li>Сбор обратной связи и доработки</li>
+                                <li>Настройка отчётности под нужды клиники</li>
+                                <li>Подготовка к полномасштабному запуску</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process__item">
+                    <div class="process__step mono">06</div>
+                    <div class="process__body">
+                        <div class="process__title">Полномасштабный запуск и сопровождение</div>
+                        <div class="process__text">
+                            <ul style="margin: 8px 0; padding-left: 20px; color: var(--text-secondary);">
+                                <li>Перевод всех пользователей на систему</li>
+                                <li>Мониторинг работы и производительности</li>
+                                <li>Постоянная техническая поддержка</li>
+                                <li>Плановое развитие системы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card" style="margin-top: 24px; max-width: 400px;">
+                <div class="stat-card__value">6-12 недель</div>
+                <div class="stat-card__label">типовой срок внедрения для клиники на 100-500 сотрудников</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section class="section" id="support">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Техническая поддержка и развитие</h2>
+                <p class="section__subtitle">
+                    Мы предлагаем различные модели поддержки в зависимости от потребностей и размера организации.
+                </p>
+            </div>
+
+            <div class="benefits__grid">
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Базовая поддержка</h3>
+                    <div class="stat-card" style="margin-bottom: 12px;">
+                        <div class="stat-card__value">от 15 000 ₽/мес</div>
+                        <div class="stat-card__label">для клиник до 50 пользователей</div>
+                    </div>
+                    <ul class="benefit-card__list">
+                        <li>Техподдержка 8×5 (рабочие дни)</li>
+                        <li>Удалённое устранение инцидентов</li>
+                        <li>Обновления системы 2 раза в год</li>
+                        <li>Консультации по использованию</li>
+                        <li>Резервное копирование данных</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Расширенная поддержка</h3>
+                    <div class="stat-card" style="margin-bottom: 12px;">
+                        <div class="stat-card__value">от 30 000 ₽/мес</div>
+                        <div class="stat-card__label">для клиник до 200 пользователей</div>
+                    </div>
+                    <ul class="benefit-card__list">
+                        <li>Техподдержка 12×5</li>
+                        <li>Приоритетное реагирование на заявки</li>
+                        <li>Обновления системы ежеквартально</li>
+                        <li>Доработка отчётов и форм</li>
+                        <li>Телефонная поддержка</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Премиум поддержка</h3>
+                    <div class="stat-card" style="margin-bottom: 12px;">
+                        <div class="stat-card__value">от 60 000 ₽/мес</div>
+                        <div class="stat-card__label">для сетей клиник и крупных медцентров</div>
+                    </div>
+                    <ul class="benefit-card__list">
+                        <li>Техподдержка 24×7</li>
+                        <li>Выделенный менеджер проекта</li>
+                        <li>Индивидуальный план обновлений</li>
+                        <li>Разработка новых функций</li>
+                        <li>Очное обучение 2 раза в год</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Обучение пользователей</h3>
+                    <div class="stat-card" style="margin-bottom: 12px;">
+                        <div class="stat-card__value">от 25 000 ₽</div>
+                        <div class="stat-card__label">за программу обучения</div>
+                    </div>
+                    <ul class="benefit-card__list">
+                        <li>Тренинги для разных категорий пользователей</li>
+                        <li>Очное и дистанционное обучение</li>
+                        <li>Видеоуроки и интерактивные инструкции</li>
+                        <li>Сертификация пользователей</li>
+                        <li>Базовый курс для новых сотрудников</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Часто задаваемые вопросы</h2>
+                <p class="section__subtitle">
+                    Ответы на наиболее частые вопросы о внедрении и использовании системы.
+                </p>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__col">
+                    <h3 class="section__subtitle-title">О внедрении</h3>
+                    <div class="process">
+                        <div class="process__item">
+                            <div class="process__step mono">Q</div>
+                            <div class="process__body">
+                                <div class="process__title">Нужно ли останавливать текущие процессы во время внедрения?</div>
+                                <div class="process__text">
+                                    Нет, внедрение происходит параллельно с текущей работой. Мы начинаем с тестового окружения, затем пилотной группы, и только потом переводим всех пользователей.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">Q</div>
+                            <div class="process__body">
+                                <div class="process__title">Что если наши процессы отличаются от типовых?</div>
+                                <div class="process__text">
+                                    Система гибко настраивается под ваши бизнес-процессы. В рамках этапа диагностики мы изучаем ваши особенности и адаптируем систему.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__col">
+                    <h3 class="section__subtitle-title">О технических аспектах</h3>
+                    <div class="process">
+                        <div class="process__item">
+                            <div class="process__step mono">Q</div>
+                            <div class="process__body">
+                                <div class="process__title">Где размещается система?</div>
+                                <div class="process__text">
+                                    Возможны три варианта: облачный сервис (SaaS), размещение на ваших серверах или гибридная модель. Поможем выбрать оптимальный вариант.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">Q</div>
+                            <div class="process__body">
+                                <div class="process__title">Как обеспечивается безопасность данных?</div>
+                                <div class="process__text">
+                                    Используем шифрование данных, разграничение прав доступа, аудит действий, резервное копирование. Система соответствует требованиям 152-ФЗ.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container section__inner cta__inner">
+            <div class="cta__content">
+                <h2 class="section__title">Рассчитайте стоимость внедрения для вашей клиники</h2>
+                <p class="section__subtitle">
+                    Отправьте основные параметры, и мы подготовим коммерческое предложение с детальным планом и сроками.
+                </p>
+            </div>
+            <form class="cta__form">
+                <div class="form__row">
+                    <label class="form__field">
+                        <span class="form__label">Количество пользователей</span>
+                        <input type="number" name="users" placeholder="Например: 50" required>
+                    </label>
+                    <label class="form__field">
+                        <span class="form__label">Количество единиц оборудования</span>
+                        <input type="number" name="equipment" placeholder="Например: 200" required>
+                    </label>
+                </div>
+                <div class="form__row">
+                    <label class="form__field">
+                        <span class="form__label">Желаемый срок внедрения</span>
+                        <select name="timeline" style="padding: 9px 10px; border-radius: 10px; border: 1px solid rgba(180, 193, 214, 0.9); font-size: 13px;">
+                            <option value="fast">Как можно быстрее (2-3 месяца)</option>
+                            <option value="standard">Стандартно (4-6 месяцев)</option>
+                            <option value="phased">Поэтапно (6-12 месяцев)</option>
+                        </select>
+                    </label>
+                    <label class="form__field">
+                        <span class="form__label">E-mail для ответа</span>
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">
+                    Получить расчёт
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <span class="footer__text">ClinicEquipFlow · Внедрение и поддержка</span>
+        <span class="footer__text">
+            <a href="index.html" style="color: var(--accent-primary);">Главная</a> · 
+            <a href="capabilities.html" style="color: var(--accent-primary);">Возможности</a> · 
+            <a href="index.html#cta" style="color: var(--accent-primary);">Контакты</a>
+        </span>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

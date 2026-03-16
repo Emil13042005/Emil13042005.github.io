@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автоматизация учёта медоборудования клиники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <a href="#top" class="header__logo">
+            <img src="assets/img/logo.svg" alt="Clinic Automate" class="header__logo-img">
+            <span class="header__logo-text">ClinicEquip<span>Flow</span></span>
+        </a>
+        <nav class="header__nav">
+            <a href="#about" class="header__nav-link">О проекте</a>
+            <a href="#benefits" class="header__nav-link">Выгоды</a>
+            <a href="#trust" class="header__nav-link">Доверие</a>
+            <a href="capabilities.html" class="header__nav-link">Возможности</a>
+            <a href="implementation.html" class="header__nav-link">Внедрение</a>
+            <a href="#cta" class="header__nav-link header__nav-link--accent">Демо</a>
+        </nav>
+        <button class="header__burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main id="top">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge">Web-платформа для медицинских организаций</div>
+                <h1 class="hero__title">
+                    Проектирование и разработка программного средства
+                    для автоматизации заказов и учёта медоборудования
+                </h1>
+                <p class="hero__subtitle">
+                    Система помогает клинике прозрачно оформлять заказы на медицинское оборудование,
+                    отслеживать их выполнение и вести точный учёт аппаратов по кабинетам и отделениям —
+                    без таблиц в Excel и потерь информации.
+                </p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary" data-scroll="#cta">
+                        Посмотреть демо интерфейса
+                    </button>
+                    <a href="capabilities.html" class="btn btn--ghost">
+                        Узнать о возможностях →
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat-card">
+                        <div class="stat-card__value">−40&nbsp;%</div>
+                        <div class="stat-card__label">времени на согласование заявок</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__value">0</div>
+                        <div class="stat-card__label">потерянных единиц оборудования</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__value">3</div>
+                        <div class="stat-card__label">клиники в пилотном внедрении</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero-ui">
+                    <div class="hero-ui__header">
+                        <div class="hero-ui__title">Заявки на оборудование</div>
+                        <div class="hero-ui__filters">
+                            <button class="hero-chip hero-chip--active">Все</button>
+                            <button class="hero-chip">В работе</button>
+                            <button class="hero-chip">Просрочены</button>
+                        </div>
+                    </div>
+                    <div class="hero-ui__table">
+                        <div class="hero-ui__row hero-ui__row--head">
+                            <span>Заявка</span>
+                            <span>Отделение</span>
+                            <span>Статус</span>
+                            <span>Срок</span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span class="mono">REQ-0241</span>
+                            <span>Рентген-кабинет</span>
+                            <span><span class="status status--success">Выполнено</span></span>
+                            <span>12.03</span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span class="mono">REQ-0278</span>
+                            <span>Кардиология</span>
+                            <span><span class="status status--warning">В работе</span></span>
+                            <span>25.03</span>
+                        </div>
+                        <div class="hero-ui__row">
+                            <span class="mono">REQ-0293</span>
+                            <span>Диагностика</span>
+                            <span><span class="status status--danger">Просрочено</span></span>
+                            <span>05.03</span>
+                        </div>
+                    </div>
+                    <div class="hero-ui__timeline">
+                        <div class="hero-ui__timeline-title">Жизненный цикл заявки</div>
+                        <div class="timeline">
+                            <div class="timeline__step timeline__step--done">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Создана</span>
+                            </div>
+                            <div class="timeline__step timeline__step--done">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Согласована</span>
+                            </div>
+                            <div class="timeline__step timeline__step--active">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Закупка</span>
+                            </div>
+                            <div class="timeline__step">
+                                <span class="timeline__dot"></span>
+                                <span class="timeline__label">Поставка</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="section" style="padding-top: 20px;">
+        <div class="container">
+            <div class="benefits__grid">
+                <a href="capabilities.html" class="benefit-card" style="cursor: pointer; transition: transform var(--transition-fast), box-shadow var(--transition-fast);">
+                    <h3 class="benefit-card__title">Детальный обзор возможностей</h3>
+                    <ul class="benefit-card__list">
+                        <li>Полный список модулей системы</li>
+                        <li>Примеры отчётов и дашбордов</li>
+                        <li>Интеграционные возможности</li>
+                        <li>Технические характеристики</li>
+                    </ul>
+                    <div style="margin-top: 12px; color: var(--accent-primary); font-size: 13px; font-weight: 500;">
+                        Подробнее →
+                    </div>
+                </a>
+                <a href="implementation.html" class="benefit-card" style="cursor: pointer; transition: transform var(--transition-fast), box-shadow var(--transition-fast);">
+                    <h3 class="benefit-card__title">Процесс внедрения и поддержка</h3>
+                    <ul class="benefit-card__list">
+                        <li>6-этапная схема внедрения</li>
+                        <li>Модели технической поддержки</li>
+                        <li>Стоимость услуг</li>
+                        <li>FAQ и ответы на вопросы</li>
+                    </ul>
+                    <div style="margin-top: 12px; color: var(--accent-primary); font-size: 13px; font-weight: 500;">
+                        Подробнее →
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--alt" id="about">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">О проекте</h2>
+                <p class="section__subtitle">
+                    Проект посвящён созданию программного средства, которое автоматизирует ключевые процессы работы
+                    с медицинским оборудованием в клинике: от оформления заявок на закупку до учёта, обслуживания и списания аппаратов.
+                    Система проектируется как web-платформа, доступная сотрудникам из разных подразделений.
+                </p>
+                <p class="section__subtitle">
+                    Решение позволяет объединить в одном месте заявки отделений, работу службы закупок, инженерной службы
+                    и руководства клиники. Все операции с оборудованием фиксируются в системе, формируя прозрачную историю
+                    для финансового анализа и управленческих решений.
+                </p>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__col">
+                    <h3 class="section__subtitle-title">Что автоматизирует система</h3>
+                    <ul class="feature-list">
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Заявки на оборудование</div>
+                                <div class="feature__text">
+                                    Оформление и согласование заявок от отделений клиники в единой форме.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Закупку и поставки</div>
+                                <div class="feature__text">
+                                    Контроль статуса заказа: от выбора поставщика до фактической поставки в клинику.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Учёт оборудования</div>
+                                <div class="feature__text">
+                                    Реестр аппаратов с привязкой к кабинету, отделению и ответственному сотруднику.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__body">
+                                <div class="feature__title">Обслуживание и списание</div>
+                                <div class="feature__text">
+                                    Напоминания о регламентном обслуживании, фиксация ремонтов и процедур списания.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__col">
+                    <h3 class="section__subtitle-title">Основные шаги процесса</h3>
+                    <div class="process">
+                        <div class="process__item">
+                            <div class="process__step mono">01</div>
+                            <div class="process__body">
+                                <div class="process__title">Подача заявки</div>
+                                <div class="process__text">
+                                    Отделение формирует стандартизированную заявку на оборудование.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">02</div>
+                            <div class="process__body">
+                                <div class="process__title">Согласование</div>
+                                <div class="process__text">
+                                    Заявка проходит согласование у руководства и службы закупок.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">03</div>
+                            <div class="process__body">
+                                <div class="process__title">Закупка и поставка</div>
+                                <div class="process__text">
+                                    Система отслеживает статус договора, поставщика и сроков поставки.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__step mono">04</div>
+                            <div class="process__body">
+                                <div class="process__title">Учёт и обслуживание</div>
+                                <div class="process__text">
+                                    Оборудование ставится на учёт, назначается ответственный, запускается цикл обслуживания.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/process-diagram.svg" alt="Схема процесса" class="about__diagram">
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="capabilities.html" class="btn btn--ghost">
+                    Смотреть полный функционал системы
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" id="benefits">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Какие задачи решает система для клиники</h2>
+                <p class="section__subtitle">
+                    Мы фокусируемся не только на учёте, но и на управленческих эффектах: снижении рисков простоев оборудования,
+                    ускорении закупок и повышении прозрачности затрат.
+                </p>
+            </div>
+            <div class="benefits__grid">
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Для руководства клиники</h3>
+                    <ul class="benefit-card__list">
+                        <li>Прозрачная картина по парку оборудования: сколько аппаратов, где установлены и в каком состоянии.</li>
+                        <li>Быстрый доступ к данным по затратам на закупку и обслуживание.</li>
+                        <li>Основание для принятия решений об инвестициях и модернизации.</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Для инженерной службы</h3>
+                    <ul class="benefit-card__list">
+                        <li>Единый реестр оборудования с серийными номерами и историей ремонтов.</li>
+                        <li>Напоминания о регламентных работах и истечении гарантий.</li>
+                        <li>Снижение риска неожиданного отказа аппаратов и простоев.</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Для закупок и экономистов</h3>
+                    <ul class="benefit-card__list">
+                        <li>Стандартизированные заявки на оборудование от отделений.</li>
+                        <li>Контроль стадий закупки и сроков поставок.</li>
+                        <li>Аналитика по поставщикам и фактическим срокам исполнения договоров.</li>
+                    </ul>
+                </article>
+                <article class="benefit-card">
+                    <h3 class="benefit-card__title">Для заведующих отделениями</h3>
+                    <ul class="benefit-card__list">
+                        <li>Понятный механизм подачи и отслеживания заявок.</li>
+                        <li>Минимум ручной переписки и Excel-таблиц.</li>
+                        <li>Прозрачность статуса: видно, на каком этапе находится заявка.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="section section--alt" id="trust">
+        <div class="container section__inner">
+            <div class="section__header">
+                <h2 class="section__title">Почему этому решению можно доверять</h2>
+                <p class="section__subtitle">
+                    Проект опирается на реальные процессы клиники и методики оценки эффективности оборудования.
+                </p>
+            </div>
+            <div class="trust__grid">
+                <div class="trust-card">
+                    <h3 class="trust-card__title">Технологическая база</h3>
+                    <ul class="trust-card__list">
+                        <li>Web-архитектура с разделением ролей и прав доступа.</li>
+                        <li>Возможность интеграции с внутренними информационными системами клиники.</li>
+                        <li>Использование подходов к защите данных пациентов и инфраструктуры.</li>
+                    </ul>
+                    <img src="assets/img/trust-1.png" alt="Технологическая база" class="trust-card__image">
+                </div>
+                <div class="trust-card">
+                    <h3 class="trust-card__title">Методика и стандарты</h3>
+                    <ul class="trust-card__list">
+                        <li>Моделирование бизнес-процессов оформления заказа и учёта оборудования.</li>
+                        <li>Учёт требований к ведению документации по медоборудованию.</li>
+                        <li>Готовность к расширению под внутренние регламенты конкретной клиники.</li>
+                    </ul>
+                    <img src="assets/img/trust-2.png" alt="Методика и стандарты" class="trust-card__image">
+                </div>
+                <div class="trust-card trust-card--highlight">
+                    <h3 class="trust-card__title">Пилотные внедрения / учебные кейсы</h3>
+                    <p class="trust-card__text">
+                        Сценарии работы системы тестировались на данных условной клиники с несколькими отделениями
+                        (хирургия, терапия, диагностика). На основе пилотного сценария были сформированы рекомендации
+                        по оптимизации процессов закупки и обслуживания оборудования.
+                    </p>
+                    <div class="trust-card__stats">
+                        <div class="trust-mini">
+                            <div class="trust-mini__value mono">150+</div>
+                            <div class="trust-mini__label">единиц оборудования в реестре пилотной базы</div>
+                        </div>
+                        <div class="trust-mini">
+                            <div class="trust-mini__value mono">30&nbsp;%</div>
+                            <div class="trust-mini__label">сокращение времени на оформление заявки</div>
+                        </div>
+                        <div class="trust-mini">
+                            <div class="trust-mini__value mono">100&nbsp;%</div>
+                            <div class="trust-mini__label">заявок с полным цифровым следом</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 16px;">
+                        <a href="implementation.html" class="btn btn--primary" style="width: 100%;">
+                            Узнать о процессе внедрения
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="cta">
+        <div class="container section__inner cta__inner">
+            <div class="cta__content">
+                <h2 class="section__title">Готовы обсудить автоматизацию учёта медоборудования?</h2>
+                <p class="section__subtitle">
+                    Оставьте свои контакты, и мы расскажем подробнее о структуре проекта, возможностях системы
+                    и вариантах адаптации под процессы вашей организации.
+                </p>
+                <div class="cta__note">
+                    Это учебный / проектный прототип. Данные используются только для связи по поводу проекта.
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="capabilities.html" class="btn btn--ghost" style="font-size: 13px;">
+                        Возможности системы
+                    </a>
+                    <a href="implementation.html" class="btn btn--ghost" style="font-size: 13px;">
+                        Процесс внедрения
+                    </a>
+                </div>
+            </div>
+            <form class="cta__form">
+                <div class="form__row">
+                    <label class="form__field">
+                        <span class="form__label">Имя и должность</span>
+                        <input type="text" name="name" placeholder="Например, Иван Петров, главврач" required>
+                    </label>
+                    <label class="form__field">
+                        <span class="form__label">Организация</span>
+                        <input type="text" name="org" placeholder="Название клиники или медцентра" required>
+                    </label>
+                </div>
+                <div class="form__row">
+                    <label class="form__field">
+                        <span class="form__label">E-mail</span>
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                </div>
+                <label class="form__field">
+                    <span class="form__label">Кратко опишите текущую ситуацию</span>
+                    <textarea name="message" rows="4" placeholder="Например: ведём учёт в Excel, много заявок теряется, сложно отслеживать статусы."></textarea>
+                </label>
+                <button type="submit" class="btn btn--primary btn--full">
+                    Получить консультацию
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <span class="footer__text">Учебный проект «Автоматизация учёта медоборудования клиники»</span>
+        <span class="footer__text">
+            <a href="capabilities.html" style="color: var(--accent-primary);">Возможности</a> · 
+            <a href="implementation.html" style="color: var(--accent-primary);">Внедрение</a> · 
+            ClinicEquipFlow · 2025
+        </span>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

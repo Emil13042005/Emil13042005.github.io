@@ -1,0 +1,19 @@
+<svg width="340" height="120" viewBox="0 0 340 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="339" height="119" rx="16" fill="white" stroke="#D6DEEB" stroke-dasharray="4 4"/>
+<g transform="translate(20,32)">
+<rect x="0" y="0" width="70" height="40" rx="10" fill="#F4F7FB"/>
+<text x="35" y="23" text-anchor="middle" font-family="Inter" font-size="10" fill="#1F2430">Заявка</text>
+<rect x="86" y="0" width="70" height="40" rx="10" fill="#F4F7FB"/>
+<text x="121" y="23" text-anchor="middle" font-family="Inter" font-size="10" fill="#1F2430">Соглас.</text>
+<rect x="172" y="0" width="70" height="40" rx="10" fill="#F4F7FB"/>
+<text x="207" y="23" text-anchor="middle" font-family="Inter" font-size="10" fill="#1F2430">Закупка</text>
+<rect x="258" y="0" width="70" height="40" rx="10" fill="#F4F7FB"/>
+<text x="293" y="23" text-anchor="middle" font-family="Inter" font-size="10" fill="#1F2430">Учёт</text>
+<path d="M70 20H86M156 20H172M242 20H258" stroke="#9AA1B8" stroke-width="1.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+</g>
+<defs>
+<marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0 0L6 3L0 6V0Z" fill="#9AA1B8"/>
+</marker>
+</defs>
+</svg>
